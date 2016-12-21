@@ -5,6 +5,10 @@ import publisher from './Publisher';
 import joe from './Joe';
 import paper from './Paper';
 
+/*
+ * 使用观察者模式可以做到，当一个事物(A)的状态发生改变而会去通知其他一个或多个其他事物(B)去做一件事情，
+ * 而(B)事物做的这件事情可能会依赖于(A)事物
+ */
 let execute = {
     init: function() {
         //将paper变为一个发布者
